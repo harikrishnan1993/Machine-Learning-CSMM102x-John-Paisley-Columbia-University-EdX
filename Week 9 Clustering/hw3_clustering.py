@@ -16,12 +16,12 @@ def emGMM(data):
     piClass = np.ones(classes)*(1/classes) #initialize with uniform probability distribution
     phi = np.zeros((length,classes))
     phiNorm = np.zeros((length,classes))
-#    #initialize the mu with uniform random selection of data points
+    #initialize the mu with uniform random selection of data points
     indices = np.random.randint(0,length,size=classes)
     mu = data[indices]
     #initialize the mu by selecting the first few data points
 #    mu = data[0:classes]
-    #manually enter the mu and Sigma for sandipan_dey testset
+    #manually enter the mu and Sigma to test with the given test dataset
 #    mu = np.array([[-0.0407818979679,	0.350655592545],
 #                  [1.03391556709,	8.99950591741],
 #                  [5.92093526532,	8.10258914395]])
@@ -96,7 +96,7 @@ def kMeans(data):
     mu = data[indices]
     #initialize the mu by selecting the first few data points
 #    mu = data[0:cNum]
-    #manually enter the mu for sandipan_dey testset
+    #manually enter the mu to test with the given test dataset
 #    mu = np.array([[5.72316172633, 7.03506602245], 
 #                   [0.0887880161461, 3.5291769851], 
 #                   [5.5084357544, 10.4242009312]])
